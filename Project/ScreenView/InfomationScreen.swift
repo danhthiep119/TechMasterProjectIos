@@ -36,7 +36,8 @@ class InfomationScreen: UIViewController {
     
     func navigationBar(){
         navigationItem.title = "Thông Tin Chi Tiết"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .redo, target: self, action: #selector(backView))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .undo , target: self, action: #selector(backView))
+        navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barTintColor = .brown
     }
     

@@ -18,7 +18,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     
     var choose:[Int] = []
     var check:Bool = false
-    var canChoose:Bool = true
     @IBOutlet weak var imgVideo: UIImageView!
     var img:UIImage?
     
@@ -104,13 +103,21 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     
     func navigationView(){
         navigationItem.title = "Đặt ghế"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(backView))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(backView))
         navigationController?.navigationBar.barTintColor = .brown
+        navigationController?.navigationBar.tintColor = .white
     }
     
     @objc func backView(){
         self.dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func btnPay(_ sender: Any) {
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PayScreen") as! PayScreen
+        mainVC.choose = choose
+        let navigation = UINavigationController(rootViewController: mainVC)
+        navigation.modalPresentationStyle = .fullScreen
+        self.present(navigation, animated: true, completion: nil)
+    }
 }
 

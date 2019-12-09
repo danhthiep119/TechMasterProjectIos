@@ -34,7 +34,8 @@ class LoginScreen: UIViewController, UITextFieldDelegate {
     
     func navigationBar(){
         navigationItem.title = "Đăng Nhập"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .redo, target: self, action: #selector(backView))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(backView))
+        navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barTintColor = .brown
     }
     

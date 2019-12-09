@@ -10,19 +10,6 @@ import Foundation
 import UIKit
 
 import ObjectMapper
-class Movie1{
-    var title:String
-    var durationmin:String
-    var decription:String
-    var image:UIImage
-    
-    init(title:String, durationmin:String, decription:String, image:UIImage) {
-        self.title = title
-        self.durationmin = durationmin
-        self.decription = decription
-        self.image = image
-    }
-}
 class Movie: Mappable {
     var count = 0
     var dataMovie = [DataMovie]()

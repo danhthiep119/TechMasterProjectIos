@@ -32,6 +32,8 @@ class RegisterScreen: UIViewController, UITextFieldDelegate {
     }
     
     func navigationView(){
+        
+        navigationController?.navigationBar.tintColor = .white
         navigationItem.title = "Đăng Ký"
         navigationController?.navigationBar.barTintColor = .brown
 //            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .redo, target: self, action: #selector(backView))
