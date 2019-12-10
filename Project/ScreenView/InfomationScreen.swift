@@ -45,5 +45,10 @@ class InfomationScreen: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func btnBooking(_ sender: Any) {
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BookSheet") as! ViewController
+               let navigation = UINavigationController(rootViewController: mainVC)
+               navigation.modalPresentationStyle = .fullScreen
+               self.present(navigation, animated: true, completion: nil)
+    }
 }

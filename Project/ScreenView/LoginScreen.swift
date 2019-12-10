@@ -23,7 +23,6 @@ class LoginScreen: UIViewController, UITextFieldDelegate {
     var isSuccess:Bool = false
     @IBOutlet weak var btnDangNhap: UIButton!
     @IBOutlet weak var btnDangKy: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         txtUser.delegate = self
@@ -73,7 +72,10 @@ class LoginScreen: UIViewController, UITextFieldDelegate {
             {
                 print(profileResponse?.jwt)
                 UserDefaults.standard.set(profileResponse?.jwt, forKey: profileResponse!.jwt)
-                self.dismiss(animated: true, completion: nil)
+                let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeScreen") as! HomeScreen
+                let navigation = UINavigationController(rootViewController: mainVC)
+                navigation.modalPresentationStyle = .fullScreen
+                self.present(navigation, animated: true, completion: nil)
             }
             else {
 //                print(profileResponse?.message)

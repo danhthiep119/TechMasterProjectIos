@@ -63,7 +63,7 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     @objc func loginView(){
-        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginView") as! LoginScreen
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuScreen") as! MenuScreen
         let navigation = UINavigationController(rootViewController: mainVC)
         navigation.modalPresentationStyle = .fullScreen
         self.present(navigation, animated: true, completion: nil)
@@ -92,7 +92,6 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBAction func btnBooking(_ sender: Any) {
         let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BookSheet") as! ViewController
-//        mainVC.img?.images = tbListMovie.indexPathForSelectedRow(movie.)
         let navigation = UINavigationController(rootViewController: mainVC)
         navigation.modalPresentationStyle = .fullScreen
         self.present(navigation, animated: true, completion: nil)

@@ -14,7 +14,8 @@ class PayScreen: UIViewController {
     @IBOutlet weak var txtEmail: UILabel!
     @IBOutlet weak var txtSheetOrder: UILabel!
     @IBOutlet weak var txtTotal: UILabel!
-    
+    var userManager:UserManager?
+    var total:Float = 0
     var choose:[Int] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,9 @@ class PayScreen: UIViewController {
         {
             txtSheetOrder.text? += "\(String(info)),"
         }
+        txtName.text = userManager?.userName
+        txtEmail.text = userManager?.email
+        txtTotal.text = "\(String(total))"
         navigationItem.title = "Thanh Toán"
             navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(backView))
             navigationController?.navigationBar.tintColor = .white

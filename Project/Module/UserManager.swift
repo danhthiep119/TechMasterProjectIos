@@ -10,16 +10,9 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-class UserRegister {
+struct UserManager {
     var userName:String
     var email:String
-    var pass:String
-    
-    init(userName:String, email:String,pass:String) {
-        self.userName = userName
-        self.email = email
-        self.pass = pass
-    }
 }
 
 
