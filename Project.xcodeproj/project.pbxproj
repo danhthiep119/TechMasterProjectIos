@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9C0FE712239E07ED00D7F52A /* CustomCollectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0FE711239E07ED00D7F52A /* CustomCollectionview.swift */; };
+		9C0FE714239E455500D7F52A /* PayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0FE713239E455500D7F52A /* PayScreen.swift */; };
+		9C0FE716239E59BA00D7F52A /* SuccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0FE715239E59BA00D7F52A /* SuccessScreen.swift */; };
 		9C413CC5239A3CF60036BBC9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C413CC4239A3CF60036BBC9 /* User.swift */; };
 		9C6762232390D6C900C025D4 /* InfomationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6762222390D6C900C025D4 /* InfomationScreen.swift */; };
 		9CAF5EA3238F673B00D58A5F /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF5EA2238F673B00D58A5F /* RegisterScreen.swift */; };
@@ -25,6 +27,9 @@
 		9CD0CF382388CEC200A7FE6A /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0CF372388CEC200A7FE6A /* ProjectTests.swift */; };
 		9CD0CF432388CEC200A7FE6A /* ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0CF422388CEC200A7FE6A /* ProjectUITests.swift */; };
 		9CD0CF512388D1B400A7FE6A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0CF502388D1B400A7FE6A /* CollectionViewCell.swift */; };
+		9CDBAF20239F525B00F5A36E /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDBAF1F239F525B00F5A36E /* MenuScreen.swift */; };
+		9CDBAF22239F536000F5A36E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDBAF21239F536000F5A36E /* MenuCell.swift */; };
+		9CDBAF24239F53D700F5A36E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDBAF23239F53D700F5A36E /* List.swift */; };
 		E0991D0199A028556A5CB02A /* libPods-Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36219600FADF6754F4B7D975 /* libPods-Project.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,8 @@
 		36219600FADF6754F4B7D975 /* libPods-Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9521980B0FB3EB3620898762 /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		9C0FE711239E07ED00D7F52A /* CustomCollectionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionview.swift; sourceTree = "<group>"; };
+		9C0FE713239E455500D7F52A /* PayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayScreen.swift; sourceTree = "<group>"; };
+		9C0FE715239E59BA00D7F52A /* SuccessScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessScreen.swift; sourceTree = "<group>"; };
 		9C413CC4239A3CF60036BBC9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9C6762222390D6C900C025D4 /* InfomationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfomationScreen.swift; sourceTree = "<group>"; };
 		9CAF5EA2238F673B00D58A5F /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
@@ -72,6 +79,9 @@
 		9CD0CF422388CEC200A7FE6A /* ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUITests.swift; sourceTree = "<group>"; };
 		9CD0CF442388CEC200A7FE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CD0CF502388D1B400A7FE6A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		9CDBAF1F239F525B00F5A36E /* MenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
+		9CDBAF21239F536000F5A36E /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		9CDBAF23239F53D700F5A36E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		DAFAD78747B0DD65D9242A94 /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +139,10 @@
 				9CAF5EA8238F800700D58A5F /* CustomTableViewCell.swift */,
 				9C6762222390D6C900C025D4 /* InfomationScreen.swift */,
 				9C0FE711239E07ED00D7F52A /* CustomCollectionview.swift */,
+				9C0FE713239E455500D7F52A /* PayScreen.swift */,
+				9C0FE715239E59BA00D7F52A /* SuccessScreen.swift */,
+				9CDBAF1F239F525B00F5A36E /* MenuScreen.swift */,
+				9CDBAF21239F536000F5A36E /* MenuCell.swift */,
 			);
 			path = ScreenView;
 			sourceTree = "<group>";
@@ -139,6 +153,7 @@
 				9CAF5EA6238F734200D58A5F /* Movie.swift */,
 				9CB3D6E52392193800765A27 /* UserManager.swift */,
 				9C413CC4239A3CF60036BBC9 /* User.swift */,
+				9CDBAF23239F53D700F5A36E /* List.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -355,19 +370,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDBAF20239F525B00F5A36E /* MenuScreen.swift in Sources */,
+				9C0FE716239E59BA00D7F52A /* SuccessScreen.swift in Sources */,
 				9CAF5EA9238F800700D58A5F /* CustomTableViewCell.swift in Sources */,
 				9CD0CF252388CEC000A7FE6A /* ViewController.swift in Sources */,
 				9CD0CF212388CEC000A7FE6A /* AppDelegate.swift in Sources */,
 				9CD0CF512388D1B400A7FE6A /* CollectionViewCell.swift in Sources */,
 				9C0FE712239E07ED00D7F52A /* CustomCollectionview.swift in Sources */,
 				9CAF5EA3238F673B00D58A5F /* RegisterScreen.swift in Sources */,
+				9C0FE714239E455500D7F52A /* PayScreen.swift in Sources */,
 				9CAF5EA5238F6B8300D58A5F /* HomeScreen.swift in Sources */,
 				9CD0CF232388CEC000A7FE6A /* SceneDelegate.swift in Sources */,
 				9CAF5EA7238F734200D58A5F /* Movie.swift in Sources */,
 				9C413CC5239A3CF60036BBC9 /* User.swift in Sources */,
 				9CC56449238D3582008BD169 /* LoginScreen.swift in Sources */,
 				9CB3D6E62392193800765A27 /* UserManager.swift in Sources */,
+				9CDBAF22239F536000F5A36E /* MenuCell.swift in Sources */,
 				9C6762232390D6C900C025D4 /* InfomationScreen.swift in Sources */,
+				9CDBAF24239F53D700F5A36E /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

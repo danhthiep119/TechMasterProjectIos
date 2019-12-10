@@ -36,7 +36,8 @@ class InfomationScreen: UIViewController {
     
     func navigationBar(){
         navigationItem.title = "Thông Tin Chi Tiết"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .redo, target: self, action: #selector(backView))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .undo , target: self, action: #selector(backView))
+        navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barTintColor = .brown
     }
     
@@ -44,5 +45,10 @@ class InfomationScreen: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func btnBooking(_ sender: Any) {
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BookSheet") as! ViewController
+               let navigation = UINavigationController(rootViewController: mainVC)
+               navigation.modalPresentationStyle = .fullScreen
+               self.present(navigation, animated: true, completion: nil)
+    }
 }

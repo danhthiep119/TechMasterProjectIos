@@ -31,7 +31,7 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
             }
         }
         cell.txtTitleMovie.text = movies.title
-        cell.txtDuration.text = String(movies.duration_min)
+        cell.txtDuration.text = "\(String(movies.duration_min)) phút"
         cell.txtDecription.text = movies.description
          
         return cell
@@ -57,12 +57,13 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func navigationView(){
         navigationItem.title = "Danh Sách Phim"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(loginView))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(loginView))
+        navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barTintColor = .brown
     }
     
     @objc func loginView(){
-        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginView") as! LoginScreen
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuScreen") as! MenuScreen
         let navigation = UINavigationController(rootViewController: mainVC)
         navigation.modalPresentationStyle = .fullScreen
         self.present(navigation, animated: true, completion: nil)

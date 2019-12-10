@@ -15,10 +15,10 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     
     let reuseIdentifier = "cell"
     var items = [0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2,2,2,2,2, 0, 0, 0, 0, 0, 0, 0, 0]
+    var total:Float = 0
     
     var choose:[Int] = []
     var check:Bool = false
-    var canChoose:Bool = true
     @IBOutlet weak var imgVideo: UIImageView!
     var img:UIImage?
     
@@ -61,18 +61,19 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         cell.layer.cornerRadius = 5
         return cell
     }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
         //kiểm tra trạng thái của ghế đã đk chọn hay chưa
         if !check {
             choose += [indexPath.row]
+            total += 70000
         }
         else {
             choose = choose.filter { indexPath.row != $0 }
         }
         cell.myImage.image = UIImage(named: check ? "Chair1" : "Chair2")
         check.toggle()
+        txtTotall.text = "\(String(total)) "
         txtSelection.text = choose.map {"\($0)"}.joined(separator: ", ")
         //nếu ghế đã được đặt thì ko cho phép đặt trùng
         for (index, info) in items.enumerated()
@@ -83,7 +84,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
                 print("Ghế này đã có người đặt")
             }
         }
-        cell.reloadInputViews()
+//        cell.reloadInputViews()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -93,10 +94,10 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 
     @IBOutlet weak var txtSelection: UILabel!
     
+    @IBOutlet weak var txtTotall: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         imgVideo.image = img
         collectionView.backgroundColor = .gray
         navigationView()
@@ -104,13 +105,22 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     
     func navigationView(){
         navigationItem.title = "Đặt ghế"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(backView))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(backView))
         navigationController?.navigationBar.barTintColor = .brown
+        navigationController?.navigationBar.tintColor = .white
     }
     
     @objc func backView(){
         self.dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func btnPay(_ sender: Any) {
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PayScreen") as! PayScreen
+        mainVC.choose = choose
+        mainVC.total = total
+        let navigation = UINavigationController(rootViewController: mainVC)
+        navigation.modalPresentationStyle = .fullScreen
+        self.present(navigation, animated: true, completion: nil)
+    }
 }
 
