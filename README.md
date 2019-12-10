@@ -13,14 +13,16 @@
 
 - Màn hình danh sách phim
 
-
+![62c4bdc49fe966b73ff8](https://user-images.githubusercontent.com/46775686/70502173-9cca6700-1b52-11ea-8f44-a53ece5cf0ec.jpg)
 
 - Màn hình chi tiết bộ phim
 
+![Screen Shot 2019-12-09 at 17 49 25](https://user-images.githubusercontent.com/46775686/70502177-a0f68480-1b52-11ea-9fbd-d9a55dde4cab.png)
 
 
 - Màn hình menu tuỳ chọn
 
+![Screen Shot 2019-12-10 at 13 35 16](https://user-images.githubusercontent.com/46775686/70502215-bd92bc80-1b52-11ea-8edd-b9adb834c74d.png)
 
 
 - màn hình sơ đồ ghế trong phòng chiếu phim
