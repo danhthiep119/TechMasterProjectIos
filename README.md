@@ -1,7 +1,7 @@
 # TechMasterProjectIos
-- Project về ứng dụng đặt vé xem phim online trên điện thoại di động
-- Thiết kế các màn hình đăng nhập, đăng ký, danh sách phim, sơ đồ ghế trong phòng chiếu phim
-- Làm được các chức năng đăng nhập, đăng ký, lấy danh sách phim
+- Project về ứng dụng đặt vé xem phim online trên điện thoại di động.
+- Thiết kế các màn hình đăng nhập, đăng ký, danh sách phim, sơ đồ ghế trong phòng chiếu phim, thông tin chi tiết phim, thanh toán, thanh toán thành công.
+- Làm được các chức năng đăng nhập, đăng ký, lấy danh sách phim.
 
 - Màn hình đăng nhập
 
@@ -13,7 +13,13 @@
 
 - Màn hình danh sách phim
 
+
+
 - Màn hình chi tiết bộ phim
+
+
+
+- Màn hình menu tuỳ chọn
 
 
 
